@@ -83,7 +83,7 @@
   width: 28px;
   height: 28px;
   position: absolute;
-  background-image: url(./img/unchecked.png);
+  background-image: url(./unchecked.png);
   background-size: cover;
   background-position: center;
   border-radius: 50%;
@@ -97,7 +97,7 @@
 }
 
 .task_list li.active::before {
-  background-image: url(./img/checked.png);
+  background-image: url(./checked.png);
 }
 
 ul li span {
