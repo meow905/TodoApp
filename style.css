@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(135deg, dodgerblue, purple);
+  padding: 10px;
+}
+
+.todo_app {
+  width: 100%;
+  max-width: 640px;
+  background: #fff;
+  padding: 30px 40px 70px;
+  margin: 100px auto;
+  border-radius: 15px;
+}
+
+.todo_app h2 {
+  color: darkblue;
+  display: flex;
+  align-items: center;
+}
+
+.todo_app img {
+  width: 30px;
+  margin-left: 10px;
+}
+
+.input_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: lightgray;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  margin-top: 15px;
+  position: relative;
+}
+
+.input_wrapper input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 10px;
+  font-size: 17px;
+}
+
+.input_wrapper button {
+  border: none;
+  outline: none;
+  background-color: orange;
+  padding: 16px 40px;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #fff;
+}
+
+.task_list li {
+  list-style: none;
+  font-size: 17px;
+  padding: 10px 40px;
+  user-select: none;
+  cursor: pointer;
+  position: relative;
+  border-radius: 10px;
+  margin-bottom: 8px;
+}
+
+.task_list li::before {
+  content: "";
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  background-image: url(./img/unchecked.png);
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  left: 5px;
+  top: 7px;
+}
+
+.task_list .active {
+  text-decoration: line-through;
+  color: #222;
+}
+
+.task_list li.active::before {
+  background-image: url(./img/checked.png);
+}
+
+ul li span {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 40px;
+  height: 40px;
+  font-size: 24px;
+  color: #222;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+ul li span:hover {
+  background-color: black;
+  color: #fff;
+}
+
+.NeedToDo {
+  border: none;
+  outline: none;
+  background-color: #555;
+  color: #fff;
+  padding: 16.8px;
+  text-align: center;
+  max-width: 100px;
+  border-radius: 15px 0px 0px 15px;
+}
